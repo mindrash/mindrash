@@ -14,10 +14,10 @@ pieces/
 sealsandeels.py
 *.zip
 pieces/
+img/*.xcf
 
 # C extensions
 *.so
-
 # Distribution / packaging
 .DS_Store
 .Python
