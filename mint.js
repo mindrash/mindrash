@@ -13,10 +13,7 @@ async function mint(){
     //Mint Inputs
     let address = account[0];
 
-    let e = document.getElementById("mintAmount");
-    let mintAmount = e.value;
-
-    let amount = mintAmount;
+    let amount = 1;
 
     //Contract Deploy
     const contract = new web3.eth.Contract(abi, contAdd);
