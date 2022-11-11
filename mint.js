@@ -1,6 +1,6 @@
 Moralis.initialize("sH702kyAPAKQArlSEHcgCNRW5pwB2yh6tLYKYDu8");
 Moralis.serverURL = "https://9ehsoxpcryno.usemoralis.com:2053/server";
-const contAdd = "0x93B7978377ddC014972c1FA3b2FD94AAf00521b7";
+const contAdd = "0x8Df24bd08Bc6Bc35956E108b64f26D68B1a385e7";
 
 async function mint(){
     //Moralis.authenticate({
