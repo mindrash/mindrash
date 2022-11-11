@@ -12,10 +12,14 @@ async function mint(){
 
     //Mint Inputs
     let address = account[0];
-    let amount = 1;
+
+    let e = document.getElementById("mintAmount");
+    let mintAmount = e.value;
+
+    let amount = mintAmount;
 
     //Contract Deploy
     const contract = new web3.eth.Contract(abi, contAdd);
-    contract.methods.mint(amount).send({from: address, value: 20000000000000000}); // mint compliance on contract so no need to try to manipulate this people
+    contract.methods.mint(amount).send({from: address, value: 0}); // mint compliance on contract so no need to try to manipulate this people
     //contract.methods.mint(amount).send({from: address, value: 20000000000000000}); // mint compliance on contract so no need to try to manipulate this people
 }
