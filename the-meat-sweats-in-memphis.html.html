@@ -299,7 +299,6 @@
 
         .site-promo {
             padding: 1em 0 6em;
-            background-image: url(img/tmsim-bg.png);
             background-size: 1355px;
             height: 550px;
         }
@@ -437,20 +436,46 @@
                 display: none
             }
         }
+
+        #background-video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+
+        @media (max-width: 750px) {
+            #background-video {
+                display: none;
+            }
+
+            body {
+                background: url("img/vdb.mp4") no-repeat;
+                background-size: cover;
+            }
+        }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
     <script src="https://unpkg.com/moralis@0.0.184/dist/moralis.js"></script>
 </head>
 
 <body>
-
-    <div class="container" style="border-bottom: #fff 10px solid;">
+    <video id="background-video" autoplay loop muted>
+        <source src="img/vdb.mp4" type="video/mp4">
+    </video>
+    <div class="container">
         <div class="site-promo">
             <img src="img/tmsim-title.png"
                 style="max-width: 600px; width: 70%;margin: 70px 0px 0px 0px;padding: 0px;border: 0px;" />
             <br />
             <div
-                style="background-color: #024d06;color:#fff;width: 80%;max-width: 600px;margin: 0 auto;padding: 2em 2em 2em 2em;opacity:.80;border-radius: 25px;">
+                style="background-color: #303030;color:#fff;width: 80%;max-width: 600px;margin: 0 auto;padding: 2em 2em 2em 2em;opacity:.80;border-radius: 25px;">
                 <p style="font-size: 18px;;">
                     <strong>The moment in time when a good thing takes a turn for the worse</strong>
                     <br /><br />
@@ -467,7 +492,7 @@
         </div>
     </div>
     <div class="site-section"
-        style="background-color: #024d06;color: #fff;width: 80%;max-width: 600px;margin: 1em auto;padding: 2em;opacity:.90;border-radius: 25px;">
+        style="background-color: #303030;color: #fff;width: 80%;max-width: 600px;margin: 1em auto;padding: 2em;opacity:.90;border-radius: 25px;">
         <div class="container">
             <div style="text-align:left">
                 <h2 style="text-align: center;">Art Information</h2>
@@ -566,9 +591,9 @@
     </div>
     </div>
     <div class="site-section"
-        style="background-color: #024d06;color: #fff;;width: 80%;max-width: 600px;margin: 1em auto;padding: 2em;opacity:.90;border-radius: 25px;">
+        style="background-color: #303030;color: #fff;;width: 80%;max-width: 600px;margin: 1em auto;padding: 2em;opacity:.90;border-radius: 25px;">
         <div class="container">
-            <h2>Attributes Rundown</h2>
+            <h2>Features Rundown</h2>
             <style>
                 #attributes {
                     width: 100%;
